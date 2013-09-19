@@ -1,0 +1,138 @@
+
+
+/*body样式*/
+body{
+    /*背景*/
+	background-image:url('../pics/wallpaper2.jpg');
+	background-repeat: no-repeat; 
+	background-attachment:fixed;
+    background-position:center top;
+    overflow-x :auto;
+    overflow-y :scroll;
+}
+/*右上角登录信息*/
+.top-right{
+	font-size:15px;
+    color:#cbbbac;
+    position:fixed;
+    right:10px;
+    top:10px;
+}
+.center{
+	margin:150px 600px auto 220px;
+	font-size:38px;
+	color:#cbbbac;
+}
+h1,h2,h3{
+    color: #cbbbac;
+	margin: 40px auto 20px auto;
+	text-align:center;
+}
+
+/* Menu菜单效果*/ 
+.menu {
+    /*菜单条的长宽*/
+	margin: 0px auto;
+    text-align: center;
+	height: 40px;
+	width: 720px;
+	/*菜单条背景颜色，防止浏览器不支持以下渐变效果*/
+	background: #635950;
+	/*实现菜单条的渐变，适应不同浏览器*/
+	background: -webkit-linear-gradient(top, #222 10%, #cbbbac 100%);
+	background: -moz-linear-gradient(top, #222 10%, #cbbbac 100%);
+	background: -o-linear-gradient(top, #222 10%, #cbbbac 100%);
+	background: -ms-linear-gradient(top, #222 10%, #cbbbac 100%);
+	background: linear-gradient(top, #222 10%, #cbbbac 100%);
+	/*菜单条圆角效果*/
+	border-radius: 15px;
+}
+.menu li {
+	position: relative;
+	list-style: none;
+	float: left;
+    display: block;
+	height: 40px;
+}
+/* Links */
+
+.menu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	line-height: 28px;
+	text-decoration: none;
+	border-left: 1px solid #393942;
+	border-right: 1px solid #4f5058;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: #cbbbac;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+}
+.menu li:first-child a {
+	border-left: none;
+}
+.menu li:last-child a {
+	border-right: none;
+}
+.menu li:hover > a {
+	color: #0b0f10;
+}
+/* Sub Menu */
+
+.menu ul {
+	position: absolute;
+	background: #635950;
+	margin: 0px;
+	padding: 0px;
+}
+/*隐藏下拉菜单*/
+.menu ul li {
+	height: 0;
+	overflow: hidden;
+}
+/*鼠标划过时显示下拉菜单*/
+.menu li:hover > ul li {
+	height: 36px;
+	overflow: visible;
+	padding: 0;
+}
+.menu ul li a {
+	width: 130px;
+	font-size:12px;
+	padding: 4px 0px 4px 0px;
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #353539;
+}
+.menu ul li:last-child a {
+	border: none;
+}
+
+table{
+	color: #cbbbac;
+	font-family:Verdana, Geneva, sans-serif;
+	margin:40px auto auto 450px; 
+	padding:20px 20px auto auto;
+	border-spacing:7px;
+	text-align:left;
+}
+
+td.spe_1{
+	color:#070b0e; 
+	text-align:left;
+	font-weight:600;
+}
+table.newsp{
+	margin:40px auto auto auto; 
+	border-spacing:0px;
+	text-align:center;
+	border-spacing:3px;
+}
+tr.newsp_1{
+	background-color:#333;
+}
+tr.newsp_2{
+	background-color:#555;
+}
